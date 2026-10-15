@@ -4,19 +4,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine KMU Webseite</title>
+    <title>Johanna – Hebamme in deiner Region</title>
+    <meta name="description" content="Hebammenpraxis Johanna – Begleitung in Schwangerschaft, Geburt und Wochenbett.">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Willkommen bei [Firmenname]</h1>
-        <p>Ihre Experten für [Dienstleistung].</p>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Johanna<span class="logo-dot">.</span></a>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#start" class="nav-link">Start</a></li>
+                <li><a href="#angebot" class="nav-link">Angebot</a></li>
+                <li><a href="#geburtsvorbereitung" class="nav-link">Geburtsvorbereitung</a></li>
+                <li><a href="#wochenbett" class="nav-link">Wochenbett</a></li>
+                <li><a href="#ueber-mich" class="nav-link">Über mich</a></li>
+                <li><a href="#kontakt" class="nav-link highlight">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="start" class="hero">
+        <div class="hero-image"
+            style="background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1920&q=80');">
+        </div>
+        <div class="hero-content">
+            <h1>Hallo, ich bin <strong>Johanna</strong></h1>
+            <p class="subtitle">Deine Hebamme für Schwangerschaft, Geburt und die erste Zeit danach.</p>
+            <a href="#kontakt" class="btn btn-primary">Kontakt aufnehmen</a>
+        </div>
+        <a href="#angebot" class="scroll-down" aria-label="Weiter scrollen">
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </header>
+
     <main>
-        <h2>Über uns</h2>
-        <p>Hier steht bald der Text über unsere Firma. Diese Seite befindet sich noch im Aufbau.</p>
+        <!-- Mein Angebot Übersicht -->
+        <section id="angebot" class="section section-light">
+            <div class="container">
+                <h2 class="section-title">Mein Angebot</h2>
+                <p class="section-intro">
+                    Du suchst vertrauensvolle Begleitung auf deinem Weg zum Kind? Ich biete dir ganzheitliche Betreuung
+                    – ganz individuell auf dich und deine Bedürfnisse abgestimmt.
+                </p>
+
+                <div class="offer-grid">
+                    <article class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Schwangerschaftskontrollen</h3>
+                        <p>Begleitend zu den Untersuchungen bei deiner Ärztin oder deinem Arzt beobachte ich die
+                            körperlichen Veränderungen und die Entwicklung deines Babys.</p>
+                    </article>
+
+                    <article class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-seedling"></i></div>
+                        <h3>Geburtsvorbereitung</h3>
+                        <p>Ob Videokurs, Hypnose oder körperliche Vorbereitung – gemeinsam finden wir den passenden Weg,
+                            damit du dich stark und sicher fühlst.</p>
+                    </article>
+
+                    <article class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-baby"></i></div>
+                        <h3>Wochenbettbegleitung</h3>
+                        <p>Nach der Geburt komme ich zu euch nach Hause. Wir schauen, wie es dir und deinem Baby geht,
+                            und ich stehe euch mit Rat zur Seite.</p>
+                    </article>
+
+                    <article class="offer-card">
+                        <div class="offer-icon"><i class="fas fa-spa"></i></div>
+                        <h3>Rückbildung</h3>
+                        <p>In kleinen Gruppen arbeiten wir über acht Wochen daran, dass sich dein Körper wieder gut
+                            anfühlt.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schwangerschaft -->
+        <section class="section">
+            <div class="container two-col">
+                <div class="col-text">
+                    <h2>Schwangerschaftskontrollen</h2>
+                    <p>
+                        In regelmässigen Kontrollen begleite ich dich durch die Schwangerschaft. Ich berate dich
+                        jederzeit passend zur Phase und behandle dich bei Bedarf mit:
+                    </p>
+                    <ul class="feature-list">
+                        <li>Taping</li>
+                        <li>Manuellen Techniken (EMH)</li>
+                        <li>Massagen</li>
+                        <li>Moxibustion</li>
+                        <li>GuaSha</li>
+                        <li>Hypnose</li>
+                        <li>Aroma- / Ceres-Therapie</li>
+                        <li>Wickel und Auflagen</li>
+                    </ul>
+                </div>
+                <div class="col-image">
+                    <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80"
+                        alt="Schwangere Frau hält sanft ihren Bauch">
+                </div>
+            </div>
+        </section>
+
+        <!-- Geburtsvorbereitung -->
+        <section id="geburtsvorbereitung" class="section section-light">
+            <div class="container">
+                <h2 class="section-title">Geburtsvorbereitung</h2>
+
+                <div class="detail-grid">
+                    <!-- Video-Kurs -->
+                    <div class="detail-card">
+                        <h3><i class="fas fa-video"></i> Video-Kurs für Paare</h3>
+                        <p>
+                            Zusammen mit dem Hebammenwerk habe ich 2025 Videos produziert, die euch als Paar umfangreich
+                            auf die Geburt vorbereiten. Ihr schaut sie bequem von Zuhause aus – wann immer ihr Zeit und
+                            Lust habt. Drei Monate lang stehen sie euch zur Verfügung.
+                        </p>
+                        <p>
+                            <strong>Inklusive</strong> eines persönlichen Gesprächs bei mir: Wir besprechen offene
+                            Fragen, eure Themen und fassen eure Geburtswünsche zusammen.
+                        </p>
+                    </div>
+
+                    <!-- Hypnose -->
+                    <div class="detail-card">
+                        <h3><i class="fas fa-wind"></i> Hypnose & Selbsthypnose</h3>
+                        <p>
+                            Gut belegt ist: Selbsthypnose kann bei einem Ausnahmezustand wie der Geburt helfen. Wir
+                            schauen gemeinsam, was <em>dein</em> Thema ist, und machen eine Hypnose dazu.
+                        </p>
+                        <p>
+                            Du übst die Selbsthypnose und erhältst im Anschluss ein Audio, das du immer wieder hören
+                            kannst – wann immer du es brauchst.
+                        </p>
+                    </div>
+
+                    <!-- Verarbeitung -->
+                    <div class="detail-card">
+                        <h3><i class="fas fa-hand-holding-heart"></i> Verarbeitung von vergangenen Geburten</h3>
+                        <p>
+                            Mittels Hypnose können wir deiner letzten Geburt auf eine positive Weise begegnen. Altes
+                            kann sich wandeln und einen neuen Blick ermöglichen – damit du freier in diese Geburt gehst.
+                        </p>
+                    </div>
+
+                    <!-- Körperlich -->
+                    <div class="detail-card">
+                        <h3><i class="fas fa-hands"></i> Körperliche Geburtvorbereitung</h3>
+                        <p>
+                            Mit EMH-Techniken bereiten wir deinen Körper gezielt auf die Geburt vor.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Spezial-Kurs: Käppli -->
+                <div class="highlight-box">
+                    <h3>Ein Käppli und mehr – Kurse für erfahrene Mütter</h3>
+                    <p>
+                        Wenn es nicht dein erstes Kind ist, bist du herzlich willkommen in meinem Austausch-Kurs. Wir
+                        treffen uns <strong>jeden Samstagmorgen von 9:00 bis 11:00 Uhr</strong>.
+                    </p>
+                    <ul>
+                        <li>Stricken an einem Käppli für dein Bébé – Wolle, Nadeln und Anleitung inklusive</li>
+                        <li>Platz für deine Fragen und einen kurzen Input zum Thema Geburt</li>
+                        <li>Netzwerk knüpfen mit Frauen aus der Umgebung</li>
+                    </ul>
+                    <div class="price-tag">
+                        <span>Erster Besuch: CHF 80.–</span>
+                        <span>Weitere Besuche: CHF 20.–</span>
+                    </div>
+                    <p class="small-print">Die Krankenkasse übernimmt möglicherweise bis zu CHF 150.– (optional per Link
+                        abzurechnen).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wochenbett -->
+        <section id="wochenbett" class="section">
+            <div class="container two-col reverse">
+                <div class="col-image">
+                    <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=800&q=80"
+                        alt="Mutter mit Neugeborenem">
+                </div>
+                <div class="col-text">
+                    <h2>Wochenbettbegleitung</h2>
+                    <p>
+                        Gerne begleite ich euch als frischgebackene Eltern und euer Neugeborenes Zuhause – vom
+                        Spitalaustritt bis zum 56. Tag.
+                    </p>
+                    <p>
+                        Ich stehe euch mit praktischen Tipps, Stillberatung und emotionaler Unterstützung zur Seite,
+                        damit die ersten Wochen entspannt starten können.
+                    </p>
+                    <p class="notice">
+                        <i class="fas fa-info-circle"></i> Aktuelle Kapazitäten: Ab <strong>[Daten eintragen]</strong>
+                        habe ich wieder freie Plätze.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rückbildung -->
+        <section class="section section-light">
+            <div class="container text-center" style="max-width: 700px;">
+                <h2 class="section-title">Rückbildungskurs</h2>
+                <p>
+                    Wöchentlich über acht Wochen treffen wir uns im Kursraum von <strong>hebammen-aarau</strong>. Wir
+                    trainieren gezielt die Beckenboden- und Bauchmuskulatur und schauen, was dein Körper nach der Geburt
+                    braucht.
+                </p>
+                <a href="#" class="btn btn-secondary">Zur Anmeldung bei hebammen-aarau</a>
+            </div>
+        </section>
+
+        <!-- Über mich -->
+        <section id="ueber-mich" class="section">
+            <div class="container two-col align-center">
+                <div class="col-image round-image">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80"
+                        alt="Portrait Johanna Hebamme">
+                </div>
+                <div class="col-text">
+                    <h2>Über mich</h2>
+                    <p>
+                        [Hier kannst du einen persönlichen Text über dich einfügen: Was hat dich zur Hebammerei
+                        gebracht? Was ist dir wichtig in der Betreuung? Was machst du, wenn du nicht gerade bei einer
+                        Geburt bist?]
+                    </p>
+                    <p>
+                        Ich freue mich darauf, dich kennenzulernen.<br>
+                        – Johanna
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Links -->
+        <section class="section section-light">
+            <div class="container">
+                <h2 class="section-title">Wertvolle Links</h2>
+                <div class="link-grid">
+                    <a href="https://www.hebammen.ch" target="_blank" rel="noopener" class="external-link">
+                        <i class="fas fa-external-link-alt"></i> Schweizerischer Hebammenverband
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" class="external-link">
+                        <i class="fas fa-external-link-alt"></i> Hebammen-Aarau (Rückbildung & Kurse)
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" class="external-link">
+                        <i class="fas fa-external-link-alt"></i> Video-Kurs-Plattform (Link folgt)
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" class="external-link">
+                        <i class="fas fa-external-link-alt"></i> Still- und Laktationsinfos
+                    </a>
+                </div>
+
+                <div class="info-box" style="margin-top: 2rem;">
+                    <h3><i class="fas fa-lock"></i> Geschützter Zugang</h3>
+                    <p>Für meine Betreuungsfrauen biete ich bald Informationsblätter zum Download an. Melde dich bei
+                        mir, wenn du Zugang benötigst.</p>
+                    <p class="small-print">(Hinweis: Für einen passwortgeschützten Bereich empfehle sich bei rein
+                        statischen Webseiten ein externer Dienst wie ein geschützter Google-Drive-Ordner oder eine
+                        Passwort-Seite deines Hostings.)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="kontakt" class="section contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>Kontakt</h2>
+                        <p>Hast du Fragen oder möchtest du einen Termin vereinbaren? Schreib mir – ich melde mich so
+                            schnell wie möglich bei dir.</p>
+
+                        <ul class="contact-list">
+                            <li><i class="fas fa-phone"></i> <a href="tel:+41000000000">[Deine Telefonnummer]</a></li>
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:info@johanna-hebamme.ch">[Deine
+                                    E-Mail]</a></li>
+                            <li><i class="fas fa-map-marker-alt"></i> [Dein Standort / Praxisadresse]</li>
+                        </ul>
+
+                        <p class="small-print" style="margin-top: 2rem;">
+                            <i class="fas fa-heart"></i> Ich freue mich auf dich!
+                        </p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Dein Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Deine E-Mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon (optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Betreff</label>
+                            <select id="subject" name="subject">
+                                <option value="allgemein">Allgemeine Anfrage</option>
+                                <option value="schwangerschaft">Schwangerschaftskontrolle</option>
+                                <option value="geburtsvorbereitung">Geburtsvorbereitung / Kurs</option>
+                                <option value="wochenbett">Wochenbettbegleitung</option>
+                                <option value="rueckbildung">Rückbildungskurs</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Deine Nachricht</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            Nachricht senden
+                        </button>
+
+                        <p class="form-status" id="formStatus"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-copy">© <span id="year"></span> Johanna – Hebamme. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
